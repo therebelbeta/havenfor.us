@@ -1,0 +1,32 @@
+{
+  "name": "havenfor.us",
+  "version": "0.0.1",
+  "description": "Landing page for the Haven family",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/therebelrobot/havenfor.us.git"
+  },
+  "author": "Trent Oswald <trentoswald@therebelrobot.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therebelrobot/havenfor.us/issues"
+  },
+  "homepage": "https://github.com/therebelrobot/havenfor.us",
+  "dependencies": {
+    "bluebird": "^2.9.14",
+    "express": "^4.12.2",
+    "lodash": "^3.5.0",
+    "moment": "^2.9.0",
+    "numeral": "^1.5.3",
+    "passport": "^0.2.1",
+    "passport-facebook": "^2.0.0",
+    "passport-twitter": "^1.0.3"
+  }
+}
