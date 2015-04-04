@@ -8,6 +8,9 @@
   <meta name="author" content="www.dethemes.com">
   <title>HavenForUs - Emily + Trent Wedding</title>
 
+  <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="components/preloader.html">
+
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.jpg">
   <!-- Bootstrap -->
@@ -63,17 +66,10 @@
 </head>
 
 <body class="fullsize">
-
   <!--PRELOADER-->
   <div id="white-screen"></div>
 
-  <div id="preloader-overlay" class="background_image">
-    <div class="block-centered">
-      <div class="centered-item">
-        <div id="logo_loader">S+A</div>
-      </div>
-    </div>
-  </div>
+  <haven-preloader class="haven-include"></haven-preloader>
 
   <!--MAP/LOCATION POPUP-->
   <div id="location">
@@ -2115,6 +2111,8 @@
     <!--END of CONTENT-->
   </div>
   <!--END of CONTENT WRAPPER-->
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>

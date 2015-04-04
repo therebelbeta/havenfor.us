@@ -9,8 +9,9 @@ $(document).ready(function () {
       fheight = $(window).height();
 
       // Preloader, Slider, Location Height
-      $("#preloader-overlay, #slider, #location").css("height", fheight);
-      $("#preloader-overlay, #slider, #location").css("margin-top", 0);
+      $("#slider, #location").css("height", fheight);
+      $("#slider, #location").css("margin-top", 0);
+      $($("haven-preloader")[0].shadowRoot).children("#preloader-overlay").css("height", fheight).css("margin-top", 0);
 
       // Others
       if ($("body").hasClass("top-bar")) {
@@ -36,8 +37,9 @@ $(document).ready(function () {
       fheight = $(window).height() - $(".sidebar-menuicon").height();
 
       // Preloader Height
-      $("#preloader-overlay, #location").css("height", $(window).height());
-      $("#preloader-overlay, #location").css("margin-top", 0);
+      $("#location").css("height", $(window).height());
+      $("#location").css("margin-top", 0);
+      $($("haven-preloader")[0].shadowRoot).children("#preloader-overlay").css("height", $(window).height()).css("margin-top", 0);
 
       // Slider Height
       $("#slider").css("height", fheight);

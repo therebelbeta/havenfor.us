@@ -18,8 +18,8 @@
 	  // PACE
 	  //==================================================================================
 	  setTimeout(function () {
-	    $("#preloader-overlay").css("visibility", "visible");
-	  }, 500);
+	    $($("haven-preloader")[0].shadowRoot).children("#preloader-overlay").css("visibility", "visible");
+	  }, 200);
 
 	  Pace.on('done', function () {
 	    $('#logo_loader').hide();
@@ -160,7 +160,13 @@
 
 	    // FADEOUT PRELOADER OVERLAY
 	    //======================================================================================
-	    $('#preloader-overlay').fadeOut("2000");
+	    console.log('This is running', $($("haven-preloader")[0].shadowRoot).children('#preloader-overlay'))
+	    $.when($($("haven-preloader")[0].shadowRoot).children('#preloader-overlay').addClass('fade-out')).then(function done(){
+	    	setTimeout(function(){
+	    	$("haven-preloader").hide();
+
+	    	},2000)
+	    });
 	  });
 
 
